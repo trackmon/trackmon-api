@@ -1,6 +1,7 @@
 # Users
 ## Add a new user
 To add a new user, send a POST request to `/signup` with the username and the plaintext password in HTTP standard authentication. It is strongly recommended to use HTTPS for this, otherwise your password will be leaked.
+
 `POST`
 ```
 /signup
