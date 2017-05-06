@@ -12,13 +12,19 @@ To get all accounts from a user, send a `GET` request with HTTP standard authent
 {
   "accounts": [
     {
-      "name": "someaccount1"
+      "name": "someaccount1",
+      "amount": 1234.5,
+      "currency": "EUR"
     },
     {
-      "name": "someotheraccount2"
+      "name": "someotheraccount2",
+      "amount": 5432.1,
+      "currency": "USD"
     },
     {
-      "name": "thebiggestaccountever"
+      "name": "thebiggestaccountever",
+      "amount": 493884.0,
+      "currency": "BTC"
     }
   ]
 }
