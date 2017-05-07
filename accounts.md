@@ -13,7 +13,7 @@ To get all accounts from a user, send a `GET` request with HTTP standard authent
   {
     "name": "Cash",
     "amount": 1234.5,
-    "currency": "EUR"
+    "currency": "EUR",
   },
   {
     "name": "creditcard",
@@ -48,11 +48,7 @@ To get all info about a specific account, send a `GET` request to `/account/:acc
 ```
 ### Response
 ```json
-{
-  "name": "Cash",
-  "balance": 43.71,
-  "currency": "EUR",
-  "history": [
+[
     {
       "name": "CSGO",
       "id": 4,
@@ -77,6 +73,5 @@ To get all info about a specific account, send a `GET` request to `/account/:acc
       "category": "Income",
       "price": 70.00
     }
-  ]
-}
+]
 ```
