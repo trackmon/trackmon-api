@@ -1,11 +1,11 @@
 # Money Accounts
 *This are NOT user accounts! Accounts are used as a money term.*
 ## Get all accounts from a user
-To get all accounts from a user, send a `GET` request with HTTP standard authentication to `/user/:username`.
+To get all accounts from a user, send a `GET` request with HTTP standard authentication to `/account`.
 
 `GET`
 ```
-/user/:username
+/account
 ```  
 ### Response
 ```json
@@ -29,14 +29,14 @@ To get all accounts from a user, send a `GET` request with HTTP standard authent
   ]
 }
 ```
-If no authentication is given, the server returns `401 Unauthorized`. If the authentication is wrong or the user is not the same as the given username, `403 Forbidden` is returned. If all goes well, `200 OK` is returned.
+If no authentication is given, the server returns `401 Unauthorized`. If the authentication is wrong, `403 Forbidden` is returned. If all goes well, `200 OK` is returned.
 
 ## Add a new account
-To add a new account, send a `POST` request with HTTP standard authentication to `/user/:username/:account`.
+To add a new account, send a `POST` request with HTTP standard authentication to `/account`.
 
 `POST`
 ```
-/user/:username/:account
+/account
 ```
 ### Response
-If no authentication is given, the server returns `401 Unauthorized`. If the authentication is wrong or the user is not the same as the given username, `403 Forbidden` is returned. If the account already exists, `400 Bad Request` is returned. If nothing goes wrong, the server returns `201 Created`.
+If no authentication is given, the server returns `401 Unauthorized`. If the authentication is wrong, `403 Forbidden` is returned. If the account already exists, `400 Bad Request` is returned. If nothing goes wrong, the server returns `201 Created`.
