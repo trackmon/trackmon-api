@@ -9,25 +9,23 @@ To get all accounts from a user, send a `GET` request with HTTP standard authent
 ```  
 ### Response
 ```json
-{
-  "accounts": [
-    {
-      "name": "Cash",
-      "amount": 1234.5,
-      "currency": "EUR"
-    },
-    {
-      "name": "creditcard",
-      "amount": 5432.1,
-      "currency": "USD"
-    },
-    {
-      "name": "thebiggestaccountever",
-      "amount": 493884.0,
-      "currency": "BTC"
-    }
-  ]
-}
+[
+  {
+    "name": "Cash",
+    "amount": 1234.5,
+    "currency": "EUR"
+  },
+  {
+    "name": "creditcard",
+    "amount": 5432.1,
+    "currency": "USD"
+  },
+  {
+    "name": "thebiggestaccountever",
+    "amount": 493884.0,
+    "currency": "BTC"
+  }
+]
 ```
 If no authentication is given, the server returns `401 Unauthorized`. If the authentication is wrong, `403 Forbidden` is returned. If all goes well, `200 OK` is returned.
 
