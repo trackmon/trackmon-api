@@ -11,16 +11,19 @@ To get all accounts from a user, send a `GET` request with HTTP standard authent
 ```json
 [
   {
+    "id": 2,
     "name": "Cash",
     "amount": 1234.5,
     "currency": "EUR",
   },
   {
-    "name": "creditcard",
+    "id": 1,
+    "name": "Credit card",
     "amount": 5432.1,
     "currency": "USD"
   },
   {
+    "id": 0
     "name": "thebiggestaccountever",
     "amount": 493884.0,
     "currency": "BTC"
