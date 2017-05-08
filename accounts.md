@@ -37,10 +37,25 @@ To add a new account, send a `POST` request with HTTP standard authentication to
 
 `POST`
 ```
-/account/:account
+/account
 ```
+```json
+{
+  "accountname": "thenewaccountname",
+  "currency": "EUR",
+  "initialamount": 50
+}
+```
+
 ### Response
 If no authentication is given, the server returns `401 Unauthorized`. If the authentication is wrong, `403 Forbidden` is returned. If the account already exists, `400 Bad Request` is returned. If nothing goes wrong, the server returns `201 Created`.
+
+`201 Created`
+```json
+{
+  "newaccountid": 2
+}
+```
 
 ## Get all info about a specific account
 To get all info about a specific account, send a `GET` request to `/account/:account`
