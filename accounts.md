@@ -23,7 +23,7 @@ To get all accounts from a user, send a `GET` request with HTTP standard authent
     "currency": "USD"
   },
   {
-    "id": 0
+    "id": 0,
     "name": "thebiggestaccountever",
     "amount": 493884.0,
     "currency": "BTC"
