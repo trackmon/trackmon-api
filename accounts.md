@@ -92,7 +92,7 @@ To get all info about a specific account, send a `GET` request to `/account/:acc
       "name": "Bank",
       "id": 1,
       "category": "Income",
-      "price": 70.00
+      "price": 70.00,
       "time": "1985-04-12T23:20:50.52Z"
     }
 ]
