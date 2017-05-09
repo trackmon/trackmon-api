@@ -72,24 +72,28 @@ To get all info about a specific account, send a `GET` request to `/account/:acc
       "id": 4,
       "category": "Entertainment/Games",
       "price": -20.00,
+      "time": "1990-12-31T23:59:60Z"
     },
     {
       "name": "Sandwich",
       "id": 3,
       "category": "Food",
       "price": -3.99,
+      "time": "1932-12-31T00:22:21Z"
     },
     {
       "name": "Toast",
       "id": 2,
       "category": "Food",
       "price": -2.30,
+      "time": "1937-01-01T12:00:27.87+00:20"
     },
     {
       "name": "Bank",
       "id": 1,
       "category": "Income",
       "price": 70.00
+      "time": "1985-04-12T23:20:50.52Z"
     }
 ]
 ```
