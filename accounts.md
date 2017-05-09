@@ -56,6 +56,8 @@ If no authentication is given, the server returns `401 Unauthorized`. If the aut
   "newaccountid": 2
 }
 ```
+## Modify Accounts
+You can modify accounts by sending a `PUT` request containing the updated JSON.
 
 ## Get all info about a specific account
 To get all info about a specific account, send a `GET` request to `/account/:account`
@@ -97,3 +99,6 @@ To get all info about a specific account, send a `GET` request to `/account/:acc
     }
 ]
 ```
+
+## Modify history
+You can modify history by sending a `PUT` request containing the updated JSON.
